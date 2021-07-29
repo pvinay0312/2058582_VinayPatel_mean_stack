@@ -1,0 +1,49 @@
+h1{
+    margin-inline-start: -7px;
+    margin-inline-end: -7px;
+    background-color: #FF6495;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    padding: 10px;
+
+}
+body {
+    background-color: #1A2238;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 50%;
+    padding: 200px;
+    color: #9DAAF2;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+
+div.container img {
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+img:hover {
+    box-shadow: 0 0 2px 5px rgba(0, 140, 186, 0.5);
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: violet;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    color: #78FFF1;
+    
+}
