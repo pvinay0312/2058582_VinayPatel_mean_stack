@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "main.js"></script>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+            <h1 style = "text-align: center;">Program Manager</h1>
+            <label for="clientname">Client Name</label>
+            <input type="text" id="clientname" placeholder="Client Name">
+        
+            <label for="projectname">Project Name</label>
+            <input type="text" id="projectname" placeholder="Project Name">
+
+            <label for = "budget">Budget</label>
+            <input type = "text" id = "budget" placeholder = "Budget">
+    
+            <button onclick = "add();">Add</button>
+            <button onclick = "funClear();">Clear</button>
+            <a href = "main.html">Back</a>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <!-- <script src = "main.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2 style = "text-align: center;">Annual Budget</h2>
+        <br>           
+       <table id="output" class="table table-bordered" border = 1>
+        <!-- <thead>
+         <tr>
+           <th>Client Name</th>
+           <th>Project Name</th>
+           <th>Budget</th>
+         </tr>
+        </thead> -->
+       <tbody>
+           <script>
+            if(localStorage.getItem('data') != null) {
+            
+            let empJson = JSON.parse(localStorage.getItem('data'));
+            console.log(empJson)
+            var startTable = "<table border=1><tr><th>Client Name</th><th>Project Name</th><th>Budget</th></tr>"
+            for (var i = 0; i < empJson.length; i++) {
+                startTable += "<tr>";
+                startTable += "<td>" + empJson[i].clientname + "</td>";
+                startTable += "<td>" + empJson[i].projectname + "</td>";
+                startTable += "<td>" + empJson[i].budget + "</td>";
+
+                startTable += "</tr>";
+            }
+            startTable += "</table>";
+            document.getElementById("output").innerHTML = startTable;
+        }
+           </script>
+       </tbody>
+       </table>
+       </div>
+       <div class = "container">
+           <a href = "main.html">Back</a>
+       </div>
+</body>
+</html>
