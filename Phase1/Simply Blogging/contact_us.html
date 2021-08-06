@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase End Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script src="add_blog.js"></script>
+    <style type="text/css">
+        footer {
+            position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: #061D25;
+           color: white;
+           text-align: right;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #70726F;
+            font-size: 20px;
+            padding: 10px;
+            border-right: 1px solid #70726F;
+            transition: all .5s ease;
+        }
+        footer a:first-child {
+            border-left: 1px solid #70726F;
+        }
+        footer a:hover {
+            color: white;
+        }
+        label{
+            margin-left: 15px; 
+            float: left;
+            text-decoration-color: #061D25;
+        }
+
+        body {
+            background: #466368;
+  background: radial-gradient(#648880, #293f50);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light" style="background-color: darkblue;">
+            <a class="flex-sm-fill text-sm-center nav-link" href="simplyblogging.html" style="color: lightblue;">Add Blogs</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="about_us.html" style="color: lightblue;">About Us</a>
+            <a class="flex-sm-fill text-sm-center nav-link active" href="contact_us.html" style="color: lightblue;">Contact Us</a>
+
+        </nav>
+        <div class = "container">
+            <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-map-marker mt-4 fa-2x"></i>
+                    <p>Iselin, NJ 08830, USA</p>
+                </li>
+
+                <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                    <p>(123)-456-7890</p>
+                </li>
+
+                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@simplyblogging.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+            <!-- <div class="tm-content-container">
+                <h2 class="pb-2 border-bottom" style="text-align: center">Contact Us</h2>
+                <div class="tm-content">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-white rounded-5 shadow-lg">
+                    <form action="" method="POST" class="tm-contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" name="contact_name"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Name" required="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact_email" name="contact_email"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Email" required="" />
+                        </div>
+
+                        <div class="form-group">
+                            <textarea rows="6" id="contact_message" name="contact_message"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Message..." required=""></textarea>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button type="submit" class="button buttonGo">
+                                Submit
+                            </button>
+                            <button type="reset" class="button buttonGo">
+                                Reset
+                            </button>
+                        </div>
+                        
+
+                    </form>
+                </div> -->
+
+            
+        </div>
+
+        <footer>
+             <label class="text-white">© 2021 Copyright: Shop 24x7</label>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-skype"></i></a>
+            
+        </footer>
+    </div>
+
+</body>
+</html>
