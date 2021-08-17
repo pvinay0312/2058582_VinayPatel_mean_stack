@@ -1,0 +1,128 @@
+<!-- <div class="card">
+    <div class="card-header">
+        Add New Contact
+    </div>
+    <div class="card-body"> -->
+        <!-- <li *ngIf="loggedin()" class="nav-item">
+            <h2>Welcome{{loggedinUser}}</h2>
+            <a class="nav-link" (click)="onLogout()">Logout</a>
+        </li> -->
+        <!-- <form (ngSubmit)='onSubmit()' #Form="ngForm"> -->
+        <!-- <form name = "form" (ngSubmit) = "addContact()">
+            <div class="form-group col-12">
+                <label for="Contact">Contact Name</label>
+                <input type="text" class="form-control" [ngModel] = "contact.cname" name="cname">
+            </div>
+
+            <div class="form-group col-12">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" class="form-control" [ngModel] = "contact.phoneNumber" name="phoneNumber">
+            </div>
+
+            <div class="form-group col-12">
+                <button type = "submit" class = "btn btn-secondary">Add Contact</button>
+                <button type="reset" class="btn btn-primary">Cancel</button>
+            </div>
+        </form>
+
+        <table class="table table-hover table-stripped">
+            <thead>
+                <tr>
+                    <th>Contact Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of contactList">
+                    <td>{{ product.cname }}</td>
+                    <td>{{ product.phoneNumber }}</td>
+                </tr>
+            </tbody>
+        </table> -->
+            <!-- <div class="form-group col-12">
+          <input type="radio" id="sell" value="1" name="SellRent" required [ngModel]="SellRent">
+          <label class="m-2">Sell</label>
+          <input type="radio" id="rent" value="2" name="SellRent" required [ngModel]="SellRent" >
+          <label class="m-2">Rent</label>
+        </div> -->
+
+            <!-- <div class="form-group col-12">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" #propName="ngModel" ngModel name="Name" required minlength="5">
+                <span *ngIf="!propName.valid && propName.touched" class="error-block">
+                    <span *ngIf="propName.errors.required">Please provide name</span>
+                    <span *ngIf="propName.errors.minlength">Name must be atleast 5 char long</span>
+                </span>
+            </div> -->
+<!-- 
+            <div class="form-group col-12">
+                <label for="Contact">Contact Name</label>
+                <input type="text" class="form-control" ngModel name="cname">
+            </div>
+
+            <div class="form-group col-12">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" class="form-control" ngModel name="phoneNumber">
+            </div>
+
+            <div class="form-group col-12">
+                <input type="button" value="Submit" (click)="getEmployee()" />
+                <button type="reset" class="btn btn-primary">Cancel</button>
+            </div>
+        </form>
+        <div style="margin:50px;">
+            <div class="alert alert-info"><b>Table</b></div>
+            <div class="table-responsive" *ngIf="flag">
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Contact Name</th>
+                            <th>phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let emp of employees">
+                            <td>{{emp.cname}}</td>
+                            <td>{{emp.phoneNumber}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> -->
+    <!-- </div>
+</div> -->
+<div class="form-row mb-4">
+    <div class="col">
+        <!-- Contact Name -->
+        <input type="text" id="cname" class="form-control" placeholder="Contact Name">
+    </div>
+</div>
+
+<div class="form-row mb-4">
+    <div class="col">
+        <!-- Phone Number -->
+        <input type="text" id="phoneNumber" class="form-control" placeholder="Phone Number">
+    </div>
+</div>
+
+<!-- <input id = "cname" type = "text" placeholder = "Contact Name"/><br />
+<input id = "phoneNumber" type = "text" placeholder = "Phone Number"/><br /> -->
+<button (click) = "myFunc()" formtarget="_blank" class = "btn btn-secondary">Submit</button>
+
+<div style="margin:50px;">
+    <div class="alert alert-info"><b>Contact Details</b></div>
+        <table class="table table-hover table-stripped" border="1">
+            <thead>
+                <tr>
+                    <th>Contact Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contact of contactList">
+                    <td>{{contact.num1}}</td>
+                    <td>{{contact.num2}}</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
