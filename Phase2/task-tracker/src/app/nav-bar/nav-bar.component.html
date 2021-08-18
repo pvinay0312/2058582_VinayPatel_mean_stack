@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="login">Task Tracker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: absolute; left: 85%">
+        <ul class="nav navbar-nav navbar-right">
+            <li *ngIf="!isLoggedIn()" class="nav-item active">
+                <a class="nav-link" mat-raised-button routerLink="signup">Register</a>
+            </li>
+            <li *ngIf="!isLoggedIn()" class="nav-item active">
+                <a class="nav-link" mat-raised-button routerLink="login">Login</a>
+            </li>
+            <li *ngIf="isLoggedIn()" class="nav-item active">
+                <a class="nav-link">Welcome, {{loggedinUser}}</a>
+            </li>
+            <li *ngIf="isLoggedIn()" class="nav-item active" (click)="onLogout()">
+                <a class="nav-link" mat-raised-button routerLink='/login'>Logout</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

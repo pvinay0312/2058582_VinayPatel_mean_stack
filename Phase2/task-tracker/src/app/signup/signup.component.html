@@ -1,0 +1,50 @@
+<div>
+    <h2>Register Form</h2>
+    <!-- Default form register -->
+    <form class="text-center border border-light p-5" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+
+        <p class="h4 mb-4">Sign up</p>
+
+        <div class="form-row mb-4">
+            <div class="col">
+                <!-- First name -->
+                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name"
+                    formControlName="firstName">
+                <span *ngIf="!firstName.valid && firstName.touched || usersubmitted" class="error-block">First name is
+                    required
+                </span>
+
+            </div>
+        </div>
+        <div class="form-row mb-4">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Last name"
+                formControlName="lastName">
+            <span *ngIf="!lastName.valid && lastName.touched || usersubmitted" class="error-block">Last name is
+                required
+            </span>
+        </div>
+
+        <!-- UserName -->
+        <input type="username" id="defaultRegisterFormUserName" class="form-control mb-4" placeholder="User Name"
+            formControlName="userName">
+        <span *ngIf="!userName.valid && userName.touched || usersubmitted" class="error-block">User name is required
+        </span>
+
+        <!-- Password -->
+        <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+            aria-describedby="defaultRegisterFormPasswordHelpBlock" formControlName="password">
+        <span *ngIf="!password.valid && password.touched || usersubmitted" class="error-block">
+            <div *ngIf='password.errors!.required'>Password is required</div>
+            <div *ngIf='password.errors!.minlength'>Password must be at least 8 digits</div>
+        </span>
+        <br />
+
+        <br />
+        <button mat-stroked-button color="primary" block="true" class="my-4" type="submit">Sign in</button>
+        <button mat-stroked-button color="primary" block="true" class="my-4" style="margin-left: 15px;"
+            type="reset">Clear</button>
+        <hr>
+    </form>
+
+</div>
