@@ -1,0 +1,224 @@
+{
+    "questions": [
+            {
+                "id": 1,
+                "questions": "Which type of JavaScript language is ____",
+                "answers": [
+                    {
+                        "answers": "Object-Oriented",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Object-Based",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "Assembly-language",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "None of the above",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "questions": "Which one of the following also known as Conditional Expression:",
+                "answers": [
+                    {
+                        "answers": "immediate if",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "Alternative to if-else",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Switch Statement",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "if-then-else statement",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "questions": "When interpreter encounters an empty statement, what will it do: ",
+                "answers": [
+                    {
+                        "answers": "Ignores the statement",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "Prompts to complete the statement",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Shows a warning",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Throws an error",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "questions": "The 'function' and 'var' are known as: ",
+                "answers": [
+                    {
+                        "answers": "Keywords",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Data types",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Declaration Statements",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "Prototypes",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "questions": "In JavaScript, which one of the following is not considered as an error: ",
+                "answers": [
+                    {
+                        "answers": "Syntax error",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Missing of semicolons",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Missing of Bracket",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "Division by zero",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "questions": "Which of the following number object function returns the value of the number?",
+                "answers": [
+                    {
+                        "answers": "toString()",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "toLocaleString()",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "valueOf()",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "toPrecision()",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "questions": "Which one of the following is an ternary operator:",
+                "answers": [
+                    {
+                        "answers": ":",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "?",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "-",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "+",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "questions": "Which one of the following operator returns false if both values are equal?",
+                "answers": [
+                    {
+                        "answers": "!",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "!=",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "!==",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "All of the above",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "questions": "Which one of the following is not a keyword:",
+                "answers": [
+                    {
+                        "answers": "if",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "with",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "debugger",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "use strict",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "questions": "Which one of the following symbol is used for creating comments in the javascript:",
+                "answers": [
+                    {
+                        "answers": "//",
+                        "isAnswer": true
+                    },
+                    {
+                        "answers": "/* */",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "\\",
+                        "isAnswer": false
+                    },
+                    {
+                        "answers": "None of the above",
+                        "isAnswer": false
+                    }
+                ]
+            }
+        ]
+    }

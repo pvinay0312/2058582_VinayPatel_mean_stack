@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-center row">
+    <div class="col-md-10 col-lg-10">
+      <div class="border">
+        <h1 style="text-align: center; text-decoration: underline; margin-top: 5%; color: blue;">Basic JavaScript Quiz
+        </h1>
+        <div class="user-details" *ngIf="userDetailsStep">
+          <div class="card" style="position: center;">
+            <div class="card-body">
+              <form [formGroup]="userDetails" (ngSubmit)="startQuiz()">
+                <div class="form-submit text-center">
+                  <button class="btn btn-submit">Start</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-wrapper" *ngIf="quizStep">
+          <div class="question bg-white p-3 border-bottom">
+            <div class="d-flex flex-row align-items-center question-title">
+              <h3 class="text-danger">Q.</h3>
+              <h2 class="question">{{singleQuestion?.questions || 'Question'}}</h2>
+            </div>
+            <div class="ans ml-2">
+              <div class="answers-grid">
+                <button class="btn btn-answer" *ngFor="let singleAnswer of singleQuestion?.answers; let i = index"
+                  (click)="answerPressed($event, singleAnswer, i)">
+                  {{singleAnswer.answers}}
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+              <button class="btn next-btn border-success align-items-center btn-success" type="button"
+                (click)="nextQuestion()" [disabled]="!answerBtnPress">Next<i
+                  class="fa fa-angle-right ml-2"></i></button>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="quiz-result" *ngIf="quizResultStep">
+          <div class="quiz-result-inner">
+            <h3>Result: <span>{{lastScoreGrade}}</span></h3>
+            <h3>Grade <span>{{lastScore}}/100 (%)</span></h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
