@@ -1,0 +1,165 @@
+[
+    {
+        "empid": "12001",
+        "taskid": "33322",
+        "task": "Update the project details ",
+        "deadline": "2021-09-09",
+        "submit": "Submit"
+    },
+    {
+        "empid": "12002",
+        "taskid": "4452",
+        "task": "Work on client side project ",
+        "deadline": "2021-08-30",
+        "submit": "Submit"
+    },
+    {
+        "empid": "",
+        "taskid": "",
+        "task": "",
+        "deadline": "",
+        "submit": "Submit"
+    },
+    {
+        "empid": "111",
+        "taskid": "",
+        "task": "",
+        "deadline": "",
+        "submit": "Submit"
+    },
+    {
+        "empid": "123456",
+        "taskid": "",
+        "task": "",
+        "deadline": "",
+        "submit": "Submit"
+    },
+    {
+        "empid": "11004",
+        "taskid": "88967",
+        "task": "Create a components files on Angular ",
+        "deadline": "2021-08-31"
+    },
+    {
+        "empid": "1008",
+        "taskid": "33456",
+        "task": "Work on angular created component file  ",
+        "deadline": "2021-09-03",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "11901",
+        "taskid": "456321",
+        "task": "Create a git repository for project ",
+        "deadline": "2021-09-01",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "13200",
+        "taskid": "221190",
+        "task": "Create node js file",
+        "deadline": "2021-08-31",
+        "Submit": "Submit"
+    },
+    {
+        "Display Task": "Submit"
+    },
+    {
+        "empid": "13004",
+        "taskid": "675782",
+        "task": "Work on presentation for client meeting ",
+        "deadline": "2021-09-10",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "19004",
+        "taskid": "3422278",
+        "task": "Continue working on client server side ",
+        "deadline": "2021-09-07",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "10095",
+        "taskid": "889760",
+        "task": "Complete angular component project ",
+        "deadline": "2021-09-10",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "12881",
+        "taskid": "882345",
+        "task": "Wok on backend server side ",
+        "deadline": "2021-09-13",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "12005",
+        "taskid": "785565",
+        "task": "Keep working on database side",
+        "deadline": "2021-09-16",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "12007",
+        "taskid": "003541",
+        "task": "Create a presentation slides ",
+        "deadline": "2021-09-17",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "12104",
+        "taskid": "119800",
+        "task": "Work on client server side ",
+        "deadline": "2021-09-03",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "12008",
+        "taskid": "4466771",
+        "task": "Work on express ",
+        "deadline": "2021-09-08",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "12002",
+        "taskid": "8906771",
+        "task": "Work on frontend ",
+        "deadline": "2021-09-27",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "13001",
+        "taskid": "003501",
+        "task": "Work on more CSS style ",
+        "deadline": "2021-09-20",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "13004",
+        "taskid": "292929",
+        "task": "Work on CSS and Javascript ",
+        "deadline": "2021-09-27",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "13005",
+        "taskid": "2112123",
+        "task": "Continue working on Javascript ",
+        "deadline": "2021-09-24",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "13008",
+        "taskid": "3003441",
+        "task": "Continue working on CSS for more UI",
+        "deadline": "2021-09-27",
+        "Submit": "Submit"
+    },
+    {
+        "empid": "13009",
+        "taskid": "3421670",
+        "task": "Fix the error from Node",
+        "deadline": "2021-09-27",
+        "Submit": "Submit"
+    }
+]
