@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #3333ff 0%, #66ccff 100%);
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        var socket = io();
+        socket.emit('obj',"Hello Server I am Web Socket IO Client");
+        socket.on("obj1",(msg)=> {
+            alert(msg);
+            
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="display-4" style="text-align: center;">Chat log</h2>
+            <br />
+            <form action="/addmessage" method="POST">
+                <br />
+                <input type="text" class="form-control" placeholder="Name" name="name">
+                <br />
+                <textarea cols="30" rows="10" class="form-control" placeholder="Message" name="text"></textarea>
+                <br />
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-secondary">Send</button> |
+
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+            <a href="/chat">View Message from database</a>
+        </div>
+    </div>
+</body>
+
+</html>
